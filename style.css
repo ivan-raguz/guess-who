@@ -1,0 +1,14 @@
+/* color to body is not beeing applied*/
+body{
+    background-color: #7b7974;
+}
+
+/* not sure if I should target and manually each div with a .card class. Tedious*/
+div{
+    background-color: black; /* black for prototyping at night...*/
+}
+
+span{
+    color: green;
+}
+
