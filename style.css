@@ -5,7 +5,7 @@ body{
 
 /* not sure if I should target and manually each div with a .card class. Tedious*/
 div{
-    background-color: black; /* black for prototyping at night...*/
+    background-color: white; /* black for prototyping at night...*/
 }
 
 .wrap{
@@ -27,6 +27,7 @@ span{
     /* 1fr 1fr worked fine*/
     justify-content: center;
     /* align-content: center; */ /*Not working as above does*/
+    vertical-align: center;
 }
 
 .cards{
@@ -34,6 +35,12 @@ span{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     column-gap: 20px;
     row-gap: 20px;
+}
+
+.myst_border{
+    padding: 10px;
+    background-color: white;
+    border-radius: 100%;
 }
 
 img {
