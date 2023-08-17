@@ -14,10 +14,18 @@ span{
 
 .header {
     display: grid;
+    background-color: #7b7974;
     grid-template-columns: 160px 160px; /*changing to 160px 160 will make them overlap*/ 
     /* 1fr 1fr worked fine*/
     justify-content: center;
     /* align-content: center; */ /*Not working as above does*/
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
 }
 
 img {
