@@ -12,3 +12,14 @@ span{
     color: green;
 }
 
+.header {
+    display: grid;
+    grid-template-columns: 160px 160px; /*changing to 160px 160 will make them overlap*/ 
+    /* 1fr 1fr worked fine*/
+    justify-content: center;
+    /* align-content: center; */ /*Not working as above does*/
+}
+
+img {
+    width: 100%;
+}
