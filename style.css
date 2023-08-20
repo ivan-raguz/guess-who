@@ -1,14 +1,8 @@
-/* color to body is not beeing applied*/
-body{
-    background-color: #7b7974;
+body {
+    background-color: #F0EFEC;
 }
 
-/* not sure if I should target and manually each div with a .card class. Tedious*/
-div{
-    background-color: white; /* black for prototyping at night...*/
-}
-
-.wrap{
+.wrap {
     width: 900px; 
     margin-top: 40px;
     margin-bottom: 40px;
@@ -17,30 +11,36 @@ div{
 }
 
 span{
-    color: green;
+    color: black;
 }
 
 .header {
     display: grid;
-    background-color: #7b7974;
+    /* background-color: #7b7974; */
     grid-template-columns: 160px 160px; /*changing to 160px 160 will make them overlap*/ 
     /* 1fr 1fr worked fine*/
     justify-content: center;
     /* align-content: center; */ /*Not working as above does*/
-    vertical-align: center;
+    /* vertical-align: center; */ /*align-items work better*/
+    align-items: center;
 }
 
-.cards{
+.cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     column-gap: 20px;
     row-gap: 20px;
 }
 
-.myst_border{
+.card {
+    background-color: white;
+}
+
+.mystery_person {
     padding: 10px;
     background-color: white;
     border-radius: 100%;
+    align-items: center;
 }
 
 img {
