@@ -32,13 +32,47 @@ body {
 
 .card {
     background-color: white;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 10px; /* GW6: not working with 40, top and bottom */
+    padding-top: 10px; /* adds even more white space with 40px */
+    padding-left: 10px;
+    padding-right: 10px;
+    /* margin-top: 40px;
+    margin-bottom: 40px; */
+    box-shadow: 1px 1px 1px #00000050;
 }
 
-.mystery_person {
+.mystery-card {
+    text-align: center; /* GW7: Not working/aligning text */
+    font-weight: bold;
     padding: 10px;
     background-color: white;
     border-radius: 100%;
-    align-items: center;
+    /* align-items: center; */
+
+}
+
+.instructions { 
+    border-width: 4px;
+    border-style: solid; 
+    border-color: rgb(255, 255, 255); 
+    margin: 20px; /* GW6: not seeing any real difference */
+}
+
+.footer {
+    text-align: center;
+}
+
+
+.pointer:hover {
+    cursor: pointer;
+    padding-bottom: 5px; /* GW6: not working with 40, top and bottom */
+    padding-top: 5px; /* adds even more white space with 40px */
+    padding-left: 5px;
+    padding-right: 5px;
+    transition: all 0.5s;
+
 }
 
 img {
